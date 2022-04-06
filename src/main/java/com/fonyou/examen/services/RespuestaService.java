@@ -31,10 +31,10 @@ public class RespuestaService {
 		respuesta.setPreguntaId(rDto.getPreguntaId());
 		respuesta.setRespuesta(rDto.getRespuesta());
 		respuesta = respuestaRepository.save(respuesta);
-		
+
 		Pregunta pregunta = preguntaRepository.getById(respuesta.getPreguntaId());
 		Examen examen = examenRepository.getById(pregunta.getExamenId());
-		
+
 		rDto.setId(respuesta.getId());
 		rDto.setExamen(examen.getNombre());
 		rDto.setPregunta(pregunta.getPregunta());
@@ -53,10 +53,14 @@ public class RespuestaService {
 			respuestaDTO.setEstudianteId(respuesta.getEstudianteId());
 			respuestaDTO.setExamen(examen.getNombre());
 			respuestaDTOs.add(respuestaDTO);
-			
+
 		}
-		
+
 		return respuestaDTOs;
+	}
+
+	public Respuesta findByEstudianteIdAndPreguntaId(Long estudianteId, Long preguntaId) {
+		return respuestaRepository.findByEstudianteIdAndPreguntaId(estudianteId, preguntaId);
 	}
 
 }

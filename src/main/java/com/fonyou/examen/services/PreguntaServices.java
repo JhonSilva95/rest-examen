@@ -58,4 +58,8 @@ public class PreguntaServices {
 		preguntaDTO.setId(pregunta.getId());
 		return preguntaDTO;
 	}
+
+	public List<Pregunta> getPreguntasById(Long id) {
+		return preguntaRepository.findByExamenId(id);
+	}
 }
