@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fonyou.examen.dto.RespuestaDTO;
-import com.fonyou.examen.dtos.PreguntaDTO;
-import com.fonyou.examen.models.Pregunta;
-import com.fonyou.examen.services.PreguntaServices;
 import com.fonyou.examen.services.RespuestaService;
 
 @RestController

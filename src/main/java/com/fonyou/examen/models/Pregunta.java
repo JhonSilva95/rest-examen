@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 @Entity
 public class Pregunta {
@@ -22,7 +20,6 @@ public class Pregunta {
 	private String opcionTres;
 	private String opcionCuatro;
 	private Integer respuesta;
-	private Integer puntaje;
 	
 	public Long getId() {
 		return id;
@@ -71,12 +68,6 @@ public class Pregunta {
 	}
 	public void setExamenId(Long examenId) {
 		this.examenId = examenId;
-	}
-	public Integer getPuntaje() {
-		return puntaje;
-	}
-	public void setPuntaje(Integer puntaje) {
-		this.puntaje = puntaje;
 	}
 	
 	

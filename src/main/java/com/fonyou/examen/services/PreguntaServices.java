@@ -1,14 +1,12 @@
 package com.fonyou.examen.services;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fonyou.examen.dtos.PreguntaDTO;
-import com.fonyou.examen.models.Examen;
+import com.fonyou.examen.dto.PreguntaDTO;
 import com.fonyou.examen.models.Pregunta;
 import com.fonyou.examen.repositories.ExamenRepository;
 import com.fonyou.examen.repositories.PreguntaRepository;

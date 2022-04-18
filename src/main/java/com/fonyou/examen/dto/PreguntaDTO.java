@@ -1,4 +1,4 @@
-package com.fonyou.examen.dtos;
+package com.fonyou.examen.dto;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -25,7 +25,6 @@ public class PreguntaDTO {
 	private String opcionCuatro;
 	@NotNull
 	private Integer respuesta;
-	private Integer puntaje;
 
 	public Long getId() {
 		return id;
@@ -89,14 +88,6 @@ public class PreguntaDTO {
 
 	public void setRespuesta(Integer respuesta) {
 		this.respuesta = respuesta;
-	}
-
-	public Integer getPuntaje() {
-		return puntaje;
-	}
-
-	public void setPuntaje(Integer puntaje) {
-		this.puntaje = puntaje;
 	}
 
 }

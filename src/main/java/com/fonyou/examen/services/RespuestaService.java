@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fonyou.examen.dto.RespuestaDTO;
-import com.fonyou.examen.dtos.PreguntaDTO;
 import com.fonyou.examen.models.Examen;
 import com.fonyou.examen.models.Pregunta;
 import com.fonyou.examen.models.Respuesta;

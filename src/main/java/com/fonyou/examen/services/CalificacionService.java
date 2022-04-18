@@ -47,8 +47,7 @@ public class CalificacionService {
 
 				float calificacion = 0;
 				for (Pregunta pregunta : preguntas) {
-					Respuesta respuesta = respuestaService.findByEstudianteIdAndPreguntaId(estudiante.getId(),
-							pregunta.getId());
+					Respuesta respuesta = respuestaService.findByEstudianteIdAndPreguntaId(estudiante.getId(), pregunta.getId());
 					if (respuesta != null && (respuesta.getRespuesta() == pregunta.getRespuesta())) {
 						calificacion += puntosPregunta;
 					}
